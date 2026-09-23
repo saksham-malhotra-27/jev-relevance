@@ -123,8 +123,8 @@ python examples/drop_in.py --provider openrouter
 ## Benchmarks & dashboard
 
 The [jev-relevance-evals](https://github.com/saksham-malhotra-27/jev-relevance-evals)
-companion repo holds the BEIR/NFCorpus benchmark harness and a Streamlit
-dashboard. It scores BM25 candidates three ways on the same frozen pool — plain
+companion repo holds the BEIR/NFCorpus benchmark harness and a
+[dashboard](https://jev-relevance-evals.streamlit.app/). It scores BM25 candidates three ways on the same frozen pool — plain
 keyword retrieval, the Jev relevance filter (drop-in retriever), and a cheap
 OpenRouter LLM judge — and writes full IR metrics plus per-call cost to JSON.
 On nfcorpus at the default 0.5 threshold, Jev roughly doubles precision at the
